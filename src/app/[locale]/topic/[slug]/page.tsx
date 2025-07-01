@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+"use client";
+
 import Header from "@/components/globals/header";
 import Sidebar from "@/components/globals/sidebar";
 import MainContent from "@/components/globals/main-content";
@@ -9,12 +10,9 @@ import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { getTopicData } from '@/lib/topics';
 
-export default function TopicPage(props: {
-  params: Promise<{
-    slug: string;
-  }>;
-}) {
-  const params = props.params;
+export default function TopicPage() {
+  const params = useParams<{ slug: string }>();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const t = useTranslations("Topics");
   const topicData = getTopicData(params.slug)
 
