@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Header from "@/components/globals/header";
 import Sidebar from "@/components/globals/sidebar";
 import MainContent from "@/components/globals/main-content";
@@ -14,7 +15,6 @@ export default function TopicPage(props: {
   }>;
 }) {
   const params = props.params;
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const t = useTranslations("Topics");
   const topicData = getTopicData(params.slug)
 
