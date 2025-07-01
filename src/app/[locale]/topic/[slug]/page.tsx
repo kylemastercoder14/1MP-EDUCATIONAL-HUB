@@ -8,13 +8,12 @@ import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { getTopicData } from '@/lib/topics';
 
-interface TopicPageProps {
-  params: {
+export default function TopicPage(props: {
+  params: Promise<{
     slug: string;
-  };
-}
-
-export default function TopicPage({ params }: TopicPageProps) {
+  }>;
+}) {
+  const params = await props.params;
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const t = useTranslations("Topics");
   const topicData = getTopicData(params.slug)
