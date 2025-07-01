@@ -54,26 +54,28 @@ export default function KeyboardNavigation({ currentTopic }: KeyboardNavigationP
     }
 
     const scrollToNextSection = () => {
-      const mainContent = document.querySelector("[data-main-content]")
+      const mainContent = document.querySelector("[data-main-content]") as HTMLElement | null
       const sections = document.querySelectorAll("[data-section]")
       const currentScroll = mainContent?.scrollTop || 0
 
       for (const section of sections) {
-        if (section.offsetTop > currentScroll + 100) {
-          mainContent?.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" })
+        const htmlSection = section as HTMLElement
+        if (htmlSection.offsetTop > currentScroll + 100) {
+          mainContent?.scrollTo({ top: htmlSection.offsetTop - 100, behavior: "smooth" })
           break
         }
       }
     }
 
     const scrollToPreviousSection = () => {
-      const mainContent = document.querySelector("[data-main-content]")
+      const mainContent = document.querySelector("[data-main-content]") as HTMLElement | null
       const sections = Array.from(document.querySelectorAll("[data-section]")).reverse()
       const currentScroll = mainContent?.scrollTop || 0
 
       for (const section of sections) {
-        if (section.offsetTop < currentScroll - 100) {
-          mainContent?.scrollTo({ top: section.offsetTop - 100, behavior: "smooth" })
+        const htmlSection = section as HTMLElement
+        if (htmlSection.offsetTop < currentScroll - 100) {
+          mainContent?.scrollTo({ top: htmlSection.offsetTop - 100, behavior: "smooth" })
           break
         }
       }
