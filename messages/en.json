@@ -1,0 +1,126 @@
+{
+  "LocaleLayout": {
+    "title": "1 Market Philippines - Educational Hub"
+  },
+  "LocaleSwitcher": {
+    "label": "Change Language"
+  },
+  "Header": {
+    "title": "Educational Hub",
+    "placeholder": "Search for resources, guides, and more"
+  },
+  "Common": {
+    "sidebarTitleDesktop": "Documentation",
+    "sidebarTitleMobile": "Documentation Menu",
+    "tableContentTitle": "On this page"
+  },
+  "Home": {
+    "subTitle": "Seller Center",
+    "title": "Welcome to the <span>1 Market Phillipines</span> - Educational Hub",
+    "description": "Your complete guide to succeeding on 1 Market Philippines. Learn how to start, manage, and grow your business with our comprehensive resources.",
+    "resources": [
+      {
+        "title": "Comprehensive Guides",
+        "description": "Step-by-step tutorials for every aspect of selling"
+      },
+      {
+        "title": "Grow Your Business",
+        "description": "Learn strategies to increase sales and visibility"
+      }
+    ]
+  },
+  "TopicsGrid": {
+    "featured": [
+      {
+        "title": "Hot Topics to Get You Started",
+        "cta": "Learn More",
+        "topics": [
+          {
+            "title": "How to register and verify your seller account",
+            "slug": "how-to-register-and-verify-your-seller-account"
+          },
+          {
+            "title": "Creating attractive product listings",
+            "slug": "creating-attractive-product-listings"
+          },
+          {
+            "title": "Understanding the order flow",
+            "slug": "understanding-the-order-flow"
+          },
+          {
+            "title": "Creating store coupons and product discounts",
+            "slug": "creating-store-coupons-and-product-discounts"
+          },
+          {
+            "title": "Conversion rate and traffic sources",
+            "slug": "conversion-rate-and-traffic-sources"
+          }
+        ]
+      },
+      {
+        "title": "Policies and Guidelines",
+        "cta": "Read Policies",
+        "topics": [
+          {
+            "title": "Seller do's and don'ts",
+            "slug": "seller-dos-and-donts"
+          },
+          {
+            "title": "Understanding platform fees",
+            "slug": "understanding-platform-fees"
+          },
+          {
+            "title": "Community standards and prohibited items",
+            "slug": "community-standards-and-prohibited-items"
+          },
+          {
+            "title": "Copyright and intellectual property guidelines",
+            "slug": "copyright-and-intellectual-property-guidelines"
+          },
+          {
+            "title": "Terms of service for digital products",
+            "slug": "terms-of-service-for-digital-products"
+          }
+        ]
+      }
+    ]
+  },
+  "Categories": {
+    "gettingStarted": "Getting Started",
+    "productManagement": "Product Management",
+    "orderManagement": "Order Management",
+    "marketing": "Marketing",
+    "analytics": "Analytics",
+    "policies": "Policies",
+    "advancedTopics": "Advanced Topics",
+    "toolsResources": "Tools and Resources",
+    "successStories": "Success Stories",
+    "support": "Support"
+  },
+  "Topics": {
+    "gettingStarted": {
+      "about1Market": {
+        "title": "About 1 Market Philippines",
+        "description": "Discover the mission, vision, strengths, and community-driven values behind 1 Market Philippines — the localized digital marketplace built to empower small businesses.",
+        "sections": {
+          "introduction": {
+            "title": "Introduction to 1 Market Philippines",
+            "content": "<p><strong>1 Market Philippines</strong> (1MP) is a mission-driven e-commerce platform built to empower small and medium local businesses in the Philippines. By focusing on specific communities such as cities and municipalities, 1MP bridges the gap between neighborhood sellers and modern digital commerce — giving local entrepreneurs the tools and reach they need to thrive in today’s market.</p><p>Unlike large, generic platforms, 1MP is tailored to strengthen local economies by fostering authentic, community-based selling and buying experiences. From home-based food makers to local service providers, the platform opens up new opportunities for growth without the need for a traditional storefront.</p>"
+          },
+          "missionVision": {
+            "title": "Our Mission and Vision",
+            "content": "<h4>Mission</h4><p>To empower small and medium enterprises (SMEs) by helping them grow exponentially — expanding their market reach beyond physical boundaries through digital innovation.</p><h4>Vision</h4><p>To elevate the Philippines to an economic super level by igniting an entrepreneurial revolution in every locality — where every community thrives through digital commerce.</p>"
+          },
+          "strengths": {
+            "title": "What Makes Us Different",
+            "content": "<ul><li><strong>Localized Focus:</strong> 1MP targets specific local areas, allowing sellers to deeply engage with their nearby communities and serve customers in a more personal way.</li><li><strong>Community-Oriented Approach:</strong> Our marketplace is designed to support small businesses in forming lasting connections and building loyal local customer bases.</li><li><strong>Scalable Model:</strong> While we begin at the grassroots level, our platform is built to scale — allowing businesses to grow from barangay to nationwide markets.</li><li><strong>Empowerment Through Digital:</strong> We eliminate the traditional constraints of brick-and-mortar by offering digital storefronts, e-wallet integration, and logistics support.</li><li><strong>Inclusive Platform:</strong> 1MP is open to micro-entrepreneurs and startups that may not qualify for larger platforms, ensuring no one is left behind in the digital economy.</li></ul>"
+          },
+          "coreValues": {
+            "title": "Our Core Values",
+            "content": "<ul><li><strong>Empowerment:</strong> We help small businesses grow by equipping them with digital tools and visibility to compete and succeed.</li><li><strong>Integrity:</strong> We uphold honesty, transparency, and fairness in all aspects of our platform — from seller policies to buyer protection.</li><li><strong>Community Commitment:</strong> We serve with heart. Our mission is grounded in lifting communities through inclusive economic development.</li><li><strong>Reliability & Responsibility:</strong> Our team is committed to dependable service and ethical practices, ensuring that every transaction is meaningful and trusted.</li></ul>"
+          }
+        }
+      }
+    }
+  }
+}

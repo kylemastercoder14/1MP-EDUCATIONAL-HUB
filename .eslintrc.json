@@ -1,0 +1,23 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "name": "next/link",
+        "message": "Please use the `@/i18n/navigation` module instead for navigation links. This is for internationalization support.",
+        "importNames": ["default"]
+      },
+      {
+        "name": "next/navigation",
+        "message": "Please use the `@/i18n/navigation` module instead for navigation links. This is for internationalization support.",
+        "importNames": [
+          "useRouter",
+          "usePathname",
+          "useSearchParams",
+          "redirect"
+        ]
+      }
+    ]
+  }
+}

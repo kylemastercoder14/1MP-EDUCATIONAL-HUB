@@ -1,0 +1,126 @@
+{
+  "LocaleLayout": {
+    "title": "1 Market Philippines - Edukasyong Sentro"
+  },
+  "LocaleSwitcher": {
+    "label": "Palitan ang Wika"
+  },
+  "Header": {
+    "title": "Edukasyong Sentro",
+    "placeholder": "Maghanap ng mga mapagkukunan, gabay, at iba pa"
+  },
+  "Common": {
+    "sidebarTitleDesktop": "Dokumentasyon",
+    "sidebarTitleMobile": "Menu ng Dokumentasyon",
+    "tableContentTitle": "Sa pahinang ito"
+  },
+  "Home": {
+    "subTitle": "Sentro para sa mga Nagbebenta",
+    "title": "Maligayang pagdating sa <span>1 Market Phillipines</span> - Edukasyong Sentro",
+    "description": "Ang iyong kumpletong gabay tungo sa tagumpay sa 1 Market Philippines. Matutunan kung paano magsimula, magpatakbo, at magpalago ng sariling negosyo gamit ang aming masusing mga gabay at kaalaman.",
+    "resources": [
+      {
+        "title": "Komprehensibong Gabay",
+        "description": "Sunod-sunod na gabay para sa bawat bahagi ng pagbebenta"
+      },
+      {
+        "title": "Palaguin ang Iyong Negosyo",
+        "description": "Alamin ang mga estratehiya upang mapataas ang benta ng iyong tindahan"
+      }
+    ]
+  },
+  "TopicsGrid": {
+    "featured": [
+      {
+        "title": "Mainit na Mga Paksa para Makapagsimula Ka",
+        "cta": "Alamin Pa",
+        "topics": [
+          {
+            "title": "Paano magrehistro at i-verify ang iyong seller account",
+            "slug": "paano-magrehistro-at-i-verify-ang-iyong-seller-account"
+          },
+          {
+            "title": "Paglikha ng kaakit-akit na product listings",
+            "slug": "paglikha-ng-kaakit-akit-na-product-listings"
+          },
+          {
+            "title": "Pag-unawa sa daloy ng order",
+            "slug": "pag-unawa-sa-daloy-ng-order"
+          },
+          {
+            "title": "Paglikha ng store coupons at mga diskwento sa produkto",
+            "slug": "paglikha-ng-store-coupons-at-mga-diskwento-sa-produkto"
+          },
+          {
+            "title": "Conversion rate at mga pinagmumulan ng trapiko",
+            "slug": "conversion-rate-at-mga-pinagmumulan-ng-trapiko"
+          }
+        ]
+      },
+      {
+        "title": "Mga Patakaran at Gabay",
+        "cta": "Basahin ang Mga Patakaran",
+        "topics": [
+          {
+            "title": "Mga dapat at hindi dapat gawin ng seller",
+            "slug": "mga-dapat-at-hindi-dapat-gawin-ng-seller"
+          },
+          {
+            "title": "Pag-unawa sa bayarin sa platform",
+            "slug": "pag-unawa-sa-bayarin-sa-platform"
+          },
+          {
+            "title": "Mga pamantayan ng komunidad at ipinagbabawal na produkto",
+            "slug": "mga-pamantayan-ng-komunidad-at-ipinagbabawal-na-produkto"
+          },
+          {
+            "title": "Patakaran sa copyright at intellectual property",
+            "slug": "patakaran-sa-copyright-at-intellectual-property"
+          },
+          {
+            "title": "Mga tuntunin ng serbisyo para sa digital na mga produkto",
+            "slug": "mga-tuntunin-ng-serbisyo-para-sa-digital-na-mga-produkto"
+          }
+        ]
+      }
+    ]
+  },
+  "Categories": {
+    "gettingStarted": "Pagsisimula",
+    "productManagement": "Pamamahala ng Produkto",
+    "orderManagement": "Pamamahala ng Order",
+    "marketing": "Marketing",
+    "analytics": "Analitika",
+    "policies": "Mga Patakaran",
+    "advancedTopics": "Mga Advanced na Paksa",
+    "toolsResources": "Mga Kasangkapan at Sanggunian",
+    "successStories": "Mga Kwento ng Tagumpay",
+    "support": "Suporta"
+  },
+  "Topics": {
+    "gettingStarted": {
+      "about1Market": {
+        "title": "Tungkol sa 1 Market Philippines",
+        "description": "Alamin ang layunin, pananaw, lakas, at mga pagpapahalagang nakatuon sa komunidad ng 1 Market Philippines — ang lokal na digital marketplace na nilikha upang bigyang-lakas ang maliliit na negosyo.",
+        "sections": {
+          "introduction": {
+            "title": "Panimula sa 1 Market Philippines",
+            "content": "<p><strong>1 Market Philippines</strong> (1MP) ay isang mission-driven na e-commerce platform na nilikha upang bigyang-lakas ang maliliit at katamtamang negosyo sa Pilipinas. Sa pamamagitan ng pagtutok sa mga partikular na komunidad tulad ng mga lungsod at bayan, pinagdudugtong ng 1MP ang mga tagapagbenta sa kanilang kapitbahay at ang makabagong digital na kalakalan — binibigyan sila ng mga kasangkapan at abot upang umunlad sa makabagong merkado.</p><p>Hindi tulad ng malalaki at generic na mga platform, ang 1MP ay iniangkop upang palakasin ang lokal na ekonomiya sa pamamagitan ng tunay at makakalikhaing karanasan sa pagbili at pagbebenta. Mula sa mga gumagawa ng pagkain sa bahay hanggang sa mga lokal na tagapagbigay-serbisyo, binubuksan ng platform ang mga bagong oportunidad para sa paglago kahit walang tradisyunal na tindahan.</p>"
+          },
+          "missionVision": {
+            "title": "Ang Aming Misyon at Bisyon",
+            "content": "<h4>Misyon</h4><p>Bigyang-lakas ang mga maliliit at katamtamang negosyo (SMEs) sa pamamagitan ng pagtulong sa kanilang mabilis na paglago — pinalalawak ang kanilang sakop ng merkado lagpas sa pisikal na hangganan gamit ang digital na inobasyon.</p><h4>Bisyon</h4><p>Itaguyod ang Pilipinas bilang isang makapangyarihang ekonomiya sa pamamagitan ng isang rebolusyong pangkabuhayan sa bawat komunidad — kung saan ang bawat lugar ay umuunlad sa pamamagitan ng digital na kalakalan.</p>"
+          },
+          "strengths": {
+            "title": "Ano ang Nagpapakakaiba sa Amin",
+            "content": "<ul><li><strong>Lokal na Pokus:</strong> Nakatuon ang 1MP sa mga partikular na lugar, kaya mas malalim ang ugnayan ng mga nagbebenta sa kanilang komunidad at mas personal ang serbisyo sa mga mamimili.</li><li><strong>Makakomunidad na Paglapit:</strong> Dinisenyo ang aming marketplace upang suportahan ang maliliit na negosyo sa pagbubuo ng matatag at tapat na lokal na base ng mamimili.</li><li><strong>Modelong Maaaring Palawakin:</strong> Bagama't nagsisimula kami sa antas ng barangay, ang aming platform ay maaaring lumago — mula sa lokal hanggang pambansang sakop.</li><li><strong>Pagpapalakas sa Pamamagitan ng Digital:</strong> Inaalis namin ang mga hadlang ng tradisyunal na tindahan sa pamamagitan ng digital storefronts, e-wallet integration, at suporta sa logistics.</li><li><strong>Inklusibong Plataporma:</strong> Bukas ang 1MP sa mga micro-entrepreneur at startup na maaaring hindi kwalipikado sa malalaking platform, upang walang maiwan sa digital na ekonomiya.</li></ul>"
+          },
+          "coreValues": {
+            "title": "Ang Aming Mga Pangunahing Halaga",
+            "content": "<ul><li><strong>Pagpapalakas:</strong> Tinutulungan naming lumago ang maliliit na negosyo sa pamamagitan ng pagbibigay ng mga digital na kasangkapan at visibility upang makipagkumpitensya at magtagumpay.</li><li><strong>Integridad:</strong> Pinangangalagaan namin ang katapatan, transparency, at pagiging patas sa lahat ng aspeto ng aming platform — mula sa mga patakaran ng nagbebenta hanggang sa proteksyon ng mamimili.</li><li><strong>Paninindigan sa Komunidad:</strong> Nagsisilbi kami nang may malasakit. Ang aming misyon ay nakaugat sa pag-angat ng mga komunidad sa pamamagitan ng inklusibong kaunlarang pang-ekonomiya.</li><li><strong>Pagkakatiwalaan at Pananagutan:</strong> Ang aming koponan ay nakatuon sa maaasahang serbisyo at makataong gawain, upang bawat transaksyon ay may halaga at tiwala.</li></ul>"
+          }
+        }
+      }
+    }
+  }
+}
