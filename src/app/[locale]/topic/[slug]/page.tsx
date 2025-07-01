@@ -9,6 +9,7 @@ import KeyboardNavigation from "@/components/globals/keyboard-navigation";
 import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { getTopicData } from '@/lib/topics';
+import { useParams } from "next/navigation";
 
 export default function TopicPage() {
   const params = useParams<{ slug: string }>();
