@@ -13,7 +13,7 @@ export default function TopicPage(props: {
     slug: string;
   }>;
 }) {
-  const params = await props.params;
+  const params = props.params;
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const t = useTranslations("Topics");
   const topicData = getTopicData(params.slug)
