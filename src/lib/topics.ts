@@ -106,7 +106,7 @@ export const topics: Topic[] = [
 
         <h4>Watch the Walkthrough:</h4>
         <p>Here’s a quick preview of how to complete the seller registration form:</p>
-        <img src="/getting-started/register-walkthrough.gif" alt="Seller Registration Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+        <img src="/gifs/01.gif" alt="Seller Registration Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
 
         <h4>Step 1: Access the Registration Page</h4>
         <ul>
@@ -270,6 +270,10 @@ export const topics: Topic[] = [
           <li>Ensure secure transactions and payouts</li>
           <li>Provide tailored seller features and support</li>
         </ul>
+
+        <h4>Watch the Walkthrough:</h4>
+        <p>Here’s a quick preview of how to complete the seller onboarding form:</p>
+        <img src="/gifs/02.gif" alt="Seller Onboarding Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
       `,
       },
       {
@@ -361,115 +365,594 @@ export const topics: Topic[] = [
     ],
   },
   {
-    slug: "setting-up-your-seller-profile",
-    title: "Setting Up Your Seller Profile",
+    slug: "account-settings",
+    title: "Account Settings",
     image: "/getting-started/5.png",
     description:
-      "Provide important contact and business identity details before you gain access to your seller dashboard. This step ensures your account is fully prepared for activation and support.",
+      "A comprehensive overview of your Account Settings dashboard, including how to manage your personal information, business details, and store configurations.",
     category: "Getting Started",
     readTime: "5 min read",
     difficulty: "Beginner",
-    tags: [
-      "profile",
-      "contact info",
-      "business setup",
-      "verification",
-      "seller onboarding",
-    ],
+    tags: ["account", "profile", "settings", "business"],
     sections: [
       {
-        id: "profile-overview",
-        title: "Why This Step Matters",
-        content: `
-        <p>After completing the initial onboarding form and while your documents are under admin review, you’ll be redirected to the <strong>“Setting Up”</strong> screen. This screen helps us finalize your seller profile by collecting crucial business and contact information.</p>
-        <p>These details ensure:</p>
-        <ul>
-          <li>We can reach you for support, verification, or delivery updates</li>
-          <li>Your store identity aligns with Philippine regulations</li>
-          <li>You can receive important platform announcements and order alerts</li>
-        </ul>
-      `,
+        id: "account-dashboard-intro",
+        title: "🔧 What You Can Configure",
+        content:
+          "<p>The Account Settings dashboard gives you access to everything related to your store operations — from personal info, documents, policies, to payment and warehouse configuration. It’s your main hub to control how your store is presented and how it functions internally.</p>",
       },
       {
-        id: "nationality",
-        title: "1. Nationality",
+        id: "navigation-and-layout",
+        title: "📂 Navigating the Dashboard",
+        content: `<p>The dashboard is organized into multiple sections for easy access. Each section deals with a specific aspect of your seller profile. You can jump between sections without losing unsaved data and changes.</p><p>Use the sidebar menu or breadcrumbs to quickly locate what you need to edit.</p>
+
+          <img src="/assets/account-settings.png" alt="Account settings" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />`,
+      },
+    ],
+  },
+  {
+    slug: "general-information",
+    title: "General Information",
+    image: "/getting-started/6.png",
+    description:
+      "Update your basic account details like name and password. Your email is fixed after registration for security purposes.",
+    readTime: "4 min read",
+    category: "Getting Started",
+    tags: ["account", "profile", "security"],
+    sections: [
+      {
+        id: "editable-profile-fields",
+        title: "👤 Editable vs. Locked Fields",
         content: `
-        <p>Select your nationality from the dropdown list. This is used for identity verification and to comply with local trade and tax regulations.</p>
-        <ul>
-          <li><strong>Philippine nationals</strong> must ensure consistency with provided IDs.</li>
-          <li><strong>Foreign nationals</strong> may be subject to additional verification or licensing based on the business category.</li>
-        </ul>
-        <p><strong>Note:</strong> Nationality cannot be changed after verification without formal request and re-submission of documents.</p>
-      `,
+          <p>You can update your given name, middle name, and family name anytime. However, your email address is permanent and cannot be changed for security purposes. Your password can be updated whenever needed to enhance account protection.</p><ul><li><strong>Editable:</strong> Full Name, Password</li><li><strong>Locked:</strong> Email Address</li></ul>
+          <img src="/assets/general-settings.png" alt="Account settings" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+          `,
       },
       {
-        id: "business-address",
-        title: "2. Business Address",
-        content: `
-        <p>This is the official address of your store or business operations. It may be used for billing, legal compliance, or pickup and delivery coordination.</p>
-
-        <h4>Standard Format:</h4>
-        <ul>
-          <li>Street/Building Name</li>
-          <li>Barangay</li>
-        </ul>
-
-        <p><strong>Tip:</strong> Use a valid, existing address. If you operate from home, enter your residential business address instead.</p>
-      `,
+        id: "security-and-verification",
+        title: "🔐 Security & Verification",
+        content:
+          "<p>Changes to your general information may trigger security checks. This ensures your identity and account safety. For instance, modifying your name might require document re-validation by the support team.</p>",
+      },
+    ],
+    difficulty: "Beginner",
+  },
+  {
+    slug: "payment-account",
+    title: "Payment Account",
+    image: "/getting-started/7.png",
+    description:
+      "Add multiple card or e-wallet payout methods and manage your default payment account settings.",
+    readTime: "4 min read",
+    category: "Getting Started",
+    tags: ["payment", "payout", "e-wallet", "bank"],
+    sections: [
+      {
+        id: "add-bank-and-ewallet",
+        title: "💳 Add Bank Card or E-Wallet",
+        content: `<p>You can add multiple payment accounts to receive your store earnings. Choose from traditional card-based accounts or supported e-wallet providers.</p><ul><li><strong>Cards:</strong> Card Number, CVC, Expiry Date, Cardholder Name</li><li><strong>E-Wallets:</strong> GCash, Maya, PayPal, Coins.ph — include Account Number and Account Name</li></ul>
+          <img src="/assets/payment-account.png" alt="Account settings" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+          `,
       },
       {
-        id: "contact-person",
-        title: "3. Contact Person",
-        content: `
-        <p>Enter the name of the primary contact for your business. This person will receive important messages from the admin team and will be the default contact for logistics, disputes, or regulatory concerns.</p>
-
-        <ul>
-          <li>Use full name (first, middle, last)</li>
-          <li>Should be reachable during business hours</li>
-          <li>Preferably the business owner or operations manager</li>
-        </ul>
-
-        <p><strong>Important:</strong> This name must match the name on one of your uploaded documents or be authorized in your business profile.</p>
-      `,
+        id: "manage-default-payment",
+        title: "⭐ Set Default Payout Method",
+        content: `<p>After adding multiple payment methods, you can mark one as your default payout account. Only one default method can be active at a time. Make sure it’s the one you regularly use to avoid failed transactions.</p>
+          <h4>Watch the Walkthrough:</h4>
+        <p>Here’s a quick preview of how to complete the payment account settings:</p>
+        <img src="/gifs/03.gif" alt="Payment Account Settings Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+          `,
+      },
+    ],
+    difficulty: "Beginner",
+  },
+  {
+    slug: "warehouse-settings",
+    title: "Warehouse Settings",
+    image: "/getting-started/8.png",
+    description:
+      "Set up pickup and return warehouse addresses, including contact numbers and operational status.",
+    readTime: "4 min read",
+    category: "Getting Started",
+    tags: ["warehouse", "logistics", "pickup", "return"],
+    sections: [
+      {
+        id: "pickup-return-config",
+        title: "🏬 Pickup & Return Addresses",
+        content:
+          "<p>You can assign separate addresses for pickup and return processes. These help third-party couriers navigate your shipping and receiving logistics.</p><ul><li><strong>Pickup Warehouse:</strong> Where couriers collect outbound packages.</li><li><strong>Return Warehouse:</strong> Where customers or couriers send returned items.</li></ul>",
       },
       {
-        id: "contact-number",
-        title: "4. Contact Number",
-        content: `
-        <p>Provide a valid mobile or landline number for official use. This number will be used for:</p>
-        <ul>
-          <li>Order and delivery updates</li>
-          <li>Customer support coordination</li>
-          <li>Verification calls from the admin team</li>
-        </ul>
-
-        <p><strong>Format:</strong> +63 or 0 followed by 10-digit mobile/landline number</p>
-
-        <p><strong>Example:</strong> 0917 123 4567 or +63 917 123 4567</p>
-        <p><strong>Tip:</strong> Use a phone number connected to an active SIM or service line. Virtual or disconnected numbers will cause delays in account approval.</p>
-      `,
-      },
-      {
-        id: "what-next",
-        title: "5. After Completing Your Profile",
-        content: `
-        <p>Once all fields are completed and saved, your seller profile will be marked as <strong>“Profile Ready”</strong>. You’ll be redirected to a confirmation screen while the admin team finalizes your verification review.</p>
-        <p>From here:</p>
-        <ul>
-          <li>🎯 Your account remains under <strong>Pending Review</strong> status</li>
-          <li>📧 You’ll receive an email once your profile is approved</li>
-          <li>🚀 Upon approval, full access to the <strong>Seller Dashboard</strong> will be unlocked</li>
-        </ul>
-        <p><strong>Need changes?</strong> You can request edits by contacting support before approval is finalized.</p>
+        id: "warehouse-status-and-contacts",
+        title: "📞 Status & Contact Details",
+        content: `<p>Each warehouse entry must include a contact number and an operational status (Open or Closed). This ensures delivery partners are informed if the warehouse is temporarily unavailable.</p>
+          <h4>Watch the Walkthrough:</h4>
+        <p>Here’s a quick preview of how to complete the warehouse settings:</p>
+        <img src="/gifs/04.gif" alt="Warehouse Settings Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
       `,
       },
     ],
+    difficulty: "Beginner",
+  },
+  {
+    slug: "store-policies",
+    title: "Store Policies",
+    image: "/getting-started/9.png",
+    description:
+      "Create and manage your store’s legal policies such as privacy, returns, and terms of service. All submitted policies will be subject to review by One Market Philippines to ensure compliance with our platform's standards and restrictions.",
+    readTime: "3 min read",
+    category: "Getting Started",
+    tags: ["policy", "legal", "compliance"],
+    sections: [
+      {
+        id: "create-and-manage-policies",
+        title: "📜 Add Legal Policies",
+        content:
+          "<p>Build trust by clearly stating your store's policies. Common types include:</p><ul><li>Privacy Policy</li><li>Refund/Return Policy</li><li>Terms and Conditions</li></ul><p>⚠️ <strong style='color: #800020'>Note:</strong> Once submitted, all policies will be placed under review by an administrator. This process ensures the policies meet One Market Philippines' platform guidelines and do not include restricted or prohibited content.</p>",
+      },
+      {
+        id: "policy-editor",
+        title: "✍️ Content & Customization",
+        content: `<p>You can freely write and format each policy's content. Make sure to explain clearly how customer data is handled, what return timelines are accepted, and the rights of both the seller and buyer.</p><p>🔍 All content will be reviewed before publication to ensure alignment with our community standards and legal requirements.</p>
+          <h4>Watch the Walkthrough:</h4>
+        <p>Here’s a quick preview of how to complete the policies settings:</p>
+        <img src="/gifs/05.gif" alt="Policies Settings Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+          `,
+      },
+    ],
+    difficulty: "Beginner",
+  },
+  {
+    slug: "faqs-settings",
+    title: "FAQs Settings",
+    image: "/getting-started/10.png",
+    description:
+      "Create and manage frequently asked questions to reduce customer inquiries and improve clarity.",
+    readTime: "3 min read",
+    category: "Getting Started",
+    tags: ["faqs", "support", "help"],
+    sections: [
+      {
+        id: "faq-management",
+        title: "📝 Add Frequently Asked Questions",
+        content: `<p>FAQs reduce repetitive customer questions and improve their overall shopping experience. Provide answers to the most common concerns buyers may have about your product, service, or process.</p>
+          <h4>Watch the Walkthrough:</h4>
+        <p>Here’s a quick preview of how to complete the FAQs settings:</p>
+        <img src="/gifs/06.gif" alt="FAQs Settings Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+          `,
+      },
+    ],
+    difficulty: "Beginner",
+  },
+  {
+    slug: "attachments",
+    title: "Attachments",
+    image: "/getting-started/11.png",
+    description:
+      "View all submitted business documents and track their approval status.",
+    readTime: "3 min read",
+    category: "Getting Started",
+    tags: ["documents", "verification", "attachments"],
+    sections: [
+      {
+        id: "view-only-documents",
+        title: "📁 View Uploaded Documents",
+        content:
+          "<p>You can review your submitted documents, such as government-issued IDs, business registration, or permits. These are view-only and cannot be deleted manually.</p>",
+      },
+      {
+        id: "application-status",
+        title: "📌 Check Application Status",
+        content: `<p>Each document or application process will display a status: Under Review, Approved, or Rejected. Admins may request resubmission for any rejected files.</p> <img src="/assets/attachment-settings.png" alt="Attachment settings" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />`,
+      },
+    ],
+    difficulty: "Beginner",
+  },
+  {
+    slug: "business-settings",
+    title: "Business Settings",
+    image: "/getting-started/12.png",
+    description:
+      "Manage your brand identity and store profile. Note that the business name is locked after verification.",
+    readTime: "3 min read",
+    category: "Getting Started",
+    tags: ["branding", "business", "store"],
+    sections: [
+      {
+        id: "upload-store-logo",
+        title: "🖼️ Upload Your Store Logo",
+        content:
+          "<p>Add a professional logo that represents your brand. A high-quality logo improves credibility and visual identity across your storefront and invoices.</p>",
+      },
+      {
+        id: "brand-name-lock",
+        title: "🚫 Brand Name Cannot Be Edited",
+        content:
+          "<p>Your brand name is matched with your submitted documents and is locked after approval. If there's a typo or mismatch, contact support before finalizing onboarding.</p>",
+      },
+    ],
+    difficulty: "Beginner",
   },
 
   // Product Management Category
   {
+    slug: "product-title-guidelines",
+    title: "Product Title Guidelines",
+    image: "/getting-started/13.png",
+    description:
+      "Learn how to create effective product titles that improve search visibility and attract customers.",
+    category: "Product Management",
+    readTime: "3 min read",
+    difficulty: "Beginner",
+    tags: [
+      "product titles",
+      "SEO",
+      "best practices",
+      "ecommerce",
+      "copywriting",
+    ],
+    sections: [
+      {
+        id: "benefits-of-improving-listing-quality",
+        title:
+          "Benefits of Improving Your Product Detail Page's Listing Quality ",
+        content: `
+          <ul>
+            <li><span style="color: #800020; font-weight: bold;">More exposure</span> <br />With optimized product information, more organic traffic will be directed to these products, so One Market Philippines consumers will have a higher chance to see your products. It is also more likely that the product will be selected to participate in various One Market Philippines marketing campaigns.</li>
+            <li><span style="color: #800020; font-weight: bold;">Higher conversion</span> <br /> We have seen across markets that optimized product information increases the probability of consumers adding the product to their shopping cart. High-quality product information provides consumers with greater confidence in the product, which helps lower pre-sale inquiries, give high readability of your product information and increase the sales conversion rate of your product. </li>
+          </ul>
+        `,
+      },
+      {
+        id: "product-optimization",
+        title: "Product Detail Page Optimization Guide",
+        content: `
+          <h4>How to create a good product title</h4>
+          <table cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; border: 1px solid #777;">
+  <thead>
+    <tr>
+      <th style="width: 50%; text-align: left; border: 1px solid #777; padding: 8px;">Tips</th>
+      <th style="width: 50%; text-align: left; border: 1px solid #777; padding: 8px;">Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #777; padding: 8px;">
+        <strong>Format</strong>
+        <ul>
+          <li>Use 25-80 characters. Make it easier for buyers to read and capture information.</li>
+          <li>Capitalize the first letter of each word (except conjunctions, articles, prepositions).</li>
+          <li>Include necessary punctuation marks such as hyphens (-), forward slashes (/), commas (,), and signs (&) and period (.)</li>
+          <li>Use Arabic numerals ("5", not "five")</li>
+          <li>Use abbreviations for measurement units, such as "cm", "oz", "in", and "kg"</li>
+          <li><strong>Note:</strong>
+            <ul>
+              <li>Do not use unofficial language of the country/region unless it's part of the brand name.</li>
+              <li>Do not use all uppercase, special ASCII characters (Æ, Ⓔ, Ⓡ), or ambiguous symbols like ~ ! * $ ? _ ~ { } # &lt; &gt; | * ; ^ ~ ¹ unless part of the brand name.</li>
+            </ul>
+          </li>
+        </ul>
+        <strong>Content</strong>
+        <ul>
+          <li>Must be accurate and concise, while highlighting selling points.</li>
+          <li>Recommended format: [product brand] + [product content] + [range of application] + [product type] + [main function/feature/advantage]</li>
+        </ul>
+      </td>
+      <td style="border: 1px solid #777; padding: 8px;">
+        <ol>
+          <li><strong>Safety 1st Deluxe 25-Piece Baby Healthcare and Grooming Kit</strong>
+            <ul>
+              <li>✅ Using 25–80 characters</li>
+              <li>✅ Capitalization of the first letter for each word</li>
+              <li>✅ Include necessary punctuation marks</li>
+              <li>✅ Use Latin numerals</li>
+            </ul>
+          </li>
+          <li><strong>Grimoire Girl: A Memoir of Magic and Mischief Hardcover – Oct 3, 2023</strong>
+            <ul>
+              <li>✅ Using 25–80 characters</li>
+              <li>✅ Capitalization of the first letter for each word</li>
+              <li>✅ Include necessary punctuation marks (e.g., -, /, etc.)</li>
+              <li>✅ Use Latin numerals</li>
+            </ul>
+          </li>
+          <li><strong>Panoxyl 4% Benzoyl Peroxide Acne Creamy Wash 6 oz (Pack of 2)</strong>
+            <ul>
+              <li>✅ Using 25–80 characters</li>
+              <li>✅ Capitalization of the first letter for each word</li>
+              <li>✅ Include necessary punctuation marks</li>
+              <li>✅ Use Latin numerals</li>
+              <li>✅ Use abbreviations for measurement unit</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<ul>
+              <li>It is recommended to include key information: [product brand]+[product content]+[range of application]+[product type]+[main function/feature/advantage]</li>
+              <li>[Product brand]: Brand name, provided the relevant authorization has been obtained from the brand owner</li>
+              <li>[Product content]: The composition of the commodity itself, such as material, color, size, quantity, pattern, packaging, capacity, model.</li>
+              <li>[Scope of application]: People and scenarios for which the product is applicable, such as "gender", "adult/teenager/children/baby", "outdoor", "banquet", "which part of body", "applicable to Apple 12 mobile phones", etc</li>
+              <li>[Product type]: Product classification, such as "T-shirt", "mobile phone", "bookcase" and so on.</li>
+              <li>[Main function/feature/advantage]: The description of the product, which refers to the value points the product can provide to buyers, such as "waterproof", "elastic", "collector's edition", "educational", "multi-functional", "can enhance immunity", etc</li>
+              <li>The above are general recommendations for all categories. For specific recommendations for different categories, please refer to corresponding guidelines.</li>
+            </ul>
+        `,
+      },
+    ],
+  },
+  {
+    slug: "product-photography",
+    title: "Product Photography Guide",
+    image: "/getting-started/14.png",
+    description:
+      "Master the art of product photography to showcase your items effectively.",
+    category: "Product Management",
+    readTime: "10 min read",
+    difficulty: "Intermediate",
+    tags: ["photography", "images", "visual marketing"],
+    sections: [
+      {
+        id: "first-image",
+        title: "How to create an excellent first image",
+        content: `
+          <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/f003009918964c619c30df4fca3db527~tplv-nk3i2mqmvs-image.png?x-expires=2016674693&x-signature=V%2FJR%2B2iB6FACe67Cj4n0sw0bavg%3D" alt="Image guidelines" style="max-width:100%; height:auto;" />
+          <h3>Where first image is displayed</h3>
+          <p>A few common areas it appears are:</p>
+          <ul>
+            <li>Product Details Page: <br /><img src="/assets/product-details.png" alt="product details" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-top: 5px;" /></li>
+            <li>Product Listing Page: <br /><img src="/assets/product-listing.png" alt="product listing" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-top: 5px;" /></li>
+            <li>Shopping Cart Page: <br /><img src="/assets/shopping-cart.png" alt="shopping cart" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-top: 5px;" /></li>
+            <li>Checkout Page: <br /><img src="/assets/checkout.png" alt="checkout" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-top: 5px;" /></li>
+          </ul>
+        `,
+      },
+      {
+        id: "composition-and-styling",
+        title: "Tips for producing a premium first image",
+        content: `
+          <table cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; border: 1px solid #777;">
+      <thead>
+        <tr>
+          <th style="border: 1px solid #777; padding: 8px; text-align: left;">Tips</th>
+          <th style="border: 1px solid #777; padding: 8px; text-align: left;">Examples</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid #777; padding: 8px;">
+            <strong>Background:</strong> You can choose one of the following to use:
+            <ul>
+              <li><strong>Option 1:</strong> Pure background — white or any other clean, solid-colored background</li>
+              <li><strong>Option 2:</strong> Scene background — tidy and relevant, not messy or random</li>
+              <li><strong>Option 3:</strong> Include product's unique selling point and main features in the image</li>
+            </ul>
+            <strong>Please Note:</strong> Images should be clear, high-quality, and relevant to the content.
+            <ul>
+              <li>When choosing product angles, the front angle is almost always the most preferable angle. </li>
+              <li>Do not use collage image as main product image</li>
+              <li>Make sure not to block the product with words</li>
+              <li>Make sure to include the full image of the product</li>
+              <li>Do not use images with watermarks or logos</li>
+              <li>Use natural light from a large window when possible</li>
+              <li>Avoid direct sunlight which creates harsh shadows</li>
+              <li>Use a tripod to avoid camera shake</li>
+            </ul>
+          </td>
+          <td style="border: 1px solid #777;">
+            <div style="display: flex; justify-content:center; text-align: center; border-bottom: 1px solid #777; align-items: center; gap: 10px;">
+              <div style="border-right: 1px solid #777; width: 100%; padding-right: 10px;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/9de385e1269443eaaf747c3722ca86c6~tplv-nk3i2mqmvs-image.png?x-expires=2016675302&x-signature=bybyr%2BOF0MAJ4nFFJK4RQE9UgtM%3D" alt="Pure BG 1" /><br />✅ pure background</div>
+              <div style="border-right: 1px solid #777; width: 100%; padding-right: 10px;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/a6bd795861db49a4a9d53085f68a7424~tplv-nk3i2mqmvs-image.png?x-expires=2016675308&x-signature=rCU6VWa41oSIEcAwuuOsuBQQH1k%3D" alt="Pure BG 2" /><br />✅ pure background</div>
+              <div style="width: 100%;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/320f7ee1bdf04c01a548d6a6b7bd7c7a~tplv-nk3i2mqmvs-image.png?x-expires=2016675313&x-signature=1OExpeVEifC7KqH70f3%2B6qapsbA%3D" alt="Pure BG 3" /><br />✅ pure background</div>
+            </div>
+            <div style="display: flex; justify-content:center; text-align: center; border-bottom: 1px solid #777; align-items: center; gap: 10px;">
+              <div style="border-right: 1px solid #777; width: 100%; padding-right: 10px;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/c652c9b1278e4e7185e3bd4d641a709c~tplv-nk3i2mqmvs-image.png?x-expires=2016675318&x-signature=NSDNrpBMCaLhkekdLXpEW%2Bwc3e0%3D" alt="Scene BG 1" /><br />✅ scene background</div>
+              <div style="border-right: 1px solid #777; width: 100%; padding-right: 10px;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/e40cf522aa814fa8be99a7b12eacdf5b~tplv-nk3i2mqmvs-image.png?x-expires=2016675324&x-signature=wCFO9BqGAP1Ih9yYBLyfsl%2BlN6g%3D" alt="Scene BG 2" /><br />✅ scene background</div>
+              <div style="width: 100%;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/1d909bcd91ae4a4cb7769953d172cf4f~tplv-nk3i2mqmvs-image.png?x-expires=2016675329&x-signature=i4zk8GP%2FoGJKFyORQAdcjPkm0l4%3D" alt="Scene BG 3" /><br />✅ scene background</div>
+            </div>
+            <div style="display: flex; justify-content:center; text-align: center; align-items: center; gap: 10px;">
+              <div style="border-right: 1px solid #777; width: 100%; padding-right: 10px;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/835fa571b22b4527a8ab17b6b0782fd6~tplv-nk3i2mqmvs-image.png?x-expires=2016675335&x-signature=pUF0qPY%2FaC08Q%2FfsO5oVQIcdiJQ%3D" alt="unique selling point BG 1" /><br/>✅ Unique selling point and main feature</div>
+              <div style="border-right: 1px solid #777; width: 100%; padding-right: 10px;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/49bcfcc62edc42fc9ef3be5082468ba5~tplv-nk3i2mqmvs-image.png?x-expires=2016675340&x-signature=sgGNOfNp%2B0yOfvc%2B9HGLjde%2BUdg%3D" alt="unique selling point BG 2" /><br/>✅ Unique selling point and main feature</div>
+              <div style="width: 100%;"><img style="max-width: 100%; height: auto; width: 100%;" src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/8d85e222db3646c28e9ace8fd70623f3~tplv-nk3i2mqmvs-image.png?x-expires=2016675346&x-signature=sluiTMIgxd89yzHZfnooIUfzEOw%3D" alt="unique selling point BG 3" /><br/>✅ Unique selling point and main feature</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+        `,
+      },
+      {
+        id: "more-product-images",
+        title: "How to create more product images",
+        content: `
+          <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/c4c350c86b4048fdb2d740db3f160fd5~tplv-nk3i2mqmvs-image.png?x-expires=2016675599&x-signature=YJEhbkR9bcdFG3c%2BlWp0gGC%2F9vI%3D" alt="Image guidelines" style="max-width:100%; height:auto; margin-bottom: 10px" />
+          <p>Good Images are Important for your product's listing success. Customers tend to not pay attention to products with low-quality images. So vice versa, good product images could be a great marketing asset for your shop and can set your product apart from other competitors. Poor quality images turn customers away. In an online store, the product image is one of your most valuable marketing tools. When customers browse product pages, often the image draws them to consider your product. In addition, with so many choices available for online purchases, a well-formed image can set your product apart from others. </p>
+        `,
+      },
+      {
+        id: "upload-limits",
+        title: "Image and Video Upload Limits",
+        content: `
+    <table cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; border: 1px solid #777;">
+      <thead>
+        <tr>
+          <th style="border: 1px solid #777; padding: 8px; text-align: left;">Account Type</th>
+          <th style="border: 1px solid #777; padding: 8px; text-align: left;">Upload Limits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid #777; padding: 8px;"><strong>Free Account</strong></td>
+          <td style="border: 1px solid #777; padding: 8px;">
+            Users can upload up to <strong>4 images</strong> per listing.
+          </td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #777; padding: 8px;"><strong>Pro Subscription</strong></td>
+          <td style="border: 1px solid #777; padding: 8px;">
+            Users can upload up to <strong>6 images</strong> and <strong>1 video</strong> per listing.<br/>
+            <span style="color: #800020;">Note: Pro features are only available if the subscription is enabled for your seller account.</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  `,
+      },
+    ],
+  },
+  {
+    slug: "product-description-guidelines",
+    title: "Product Description Guidelines",
+    image: "/getting-started/15.png",
+    description:
+      "Learn how to create effective product descriptions that improve search visibility and attract customers.",
+    category: "Product Management",
+    readTime: "3 min read",
+    difficulty: "Beginner",
+    tags: [
+      "product descriptions",
+      "SEO",
+      "best practices",
+      "ecommerce",
+      "copywriting",
+      "content writing",
+    ],
+    sections: [
+      {
+        id: "how-to-create-readable-product-descriptions",
+        title:
+          "How to create a product description that is easy to read and understand ",
+        content: `
+        <b>👍 Tips:</b>
+          <ul>
+            <li><b>✅ Sufficient textual expression(≥ 500 characters):</b> Put yourself in your customer's shoes: what would they want to receive from a consumer sentiment perspective? Then incorporate your description with product benefits clearly lay out to resonate with your target audience. </li>
+            <li><b>✅ Easy-to-read format:</b> Necessary punctuation ➕ Segmentation ➕ Highlighting with your text (bold/underline/serial number, etc.)</li>
+            <li><b>✅ Contain images:</b> Try to create an experience as close to an in-store experience as you can. Make it as close as you can come to creating an in-store experience. </li>
+            <li><b>✅ Use bullet points:</b> Break down complex information into digestible bullet points for better readability.</li>
+            <li><b>✅ Include customer reviews:</b> Showcase positive feedback from customers to build trust and credibility.</li>
+            <li><b>✅ Use high-quality images:</b> Ensure that images are clear, well-lit, and showcase the product from multiple angles.</li>
+            <li><b>✅ Provide detailed specifications:</b> Include important product details such as dimensions, materials, and care instructions.</li>
+          </ul>
+        `,
+      },
+      {
+        id: "sample-product-description",
+        title: "Sample Product Description",
+        content: `
+          <h4>
+            Here are some sample product descriptions that you can use as a reference:
+          </h4>
+          <table cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; border: 1px solid #777;">
+  <thead>
+    <tr>
+      <th style="width: 30%; text-align: left; border: 1px solid #777; padding: 8px;">Content Suggestion</th>
+      <th style="width: 70%; text-align: left; border: 1px solid #777; padding: 8px;">Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #777; padding: 8px;">
+        <strong>✅ Attribute detailed description (material, design, fit, style, washing instruction etc.)</strong>
+      </td>
+      <td style="border: 1px solid #777;">
+        <div style="display: flex; align-items: center;">
+        <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/d6534ffc24ba4a2383a9a654462bd256~tplv-nk3i2mqmvs-image.png?x-expires=2016676953&x-signature=0qEKAGmlUwfRB9hw6GzS9eJ2cRg%3D" alt="Image guidelines" style="width: 100%; object-fit: cover; height:200px; margin-bottom: 10px" />
+        <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/ca5910afaafb4eccaffcab158e490f7a~tplv-nk3i2mqmvs-image.png?x-expires=2016676953&x-signature=ANwaRUA%2BXIhmaAkT3ieXB5W%2BEgs%3D" alt="Image guidelines" style="width: 100%; object-fit: cover; height:200px; margin-bottom: 10px" />
+        <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/c629b5c9470a4d42bd4f687e91887ded~tplv-nk3i2mqmvs-image.png?x-expires=2016676952&x-signature=KnCFQkLiQwLpx9ch%2BAhj2mQqFis%3D" alt="Image guidelines" style="width: 100%; object-fit: cover; height:200px; margin-bottom: 10px" />
+        </div>
+      </td>
+    </tr>
+        <tr>
+      <td style="border: 1px solid #777; padding: 8px;">
+        <strong>✅ Model display or Collocation guide</strong>
+      </td>
+      <td style="border: 1px solid #777;">
+        <div style="display: flex; align-items: center;">
+        <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/b9725e98bd7841fba2d64977b7e74afe~tplv-nk3i2mqmvs-image.png?x-expires=2016676997&x-signature=KCuK%2BFG%2FNlpQSBLnAtXiqkx7K4w%3D" alt="Image guidelines" style="width: 100%; object-fit: cover; height:200px; margin-bottom: 10px" />
+        <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/98e00d81a3ae427d95bae62d988d936c~tplv-nk3i2mqmvs-image.png?x-expires=2016676997&x-signature=PK9yqrOwtVYgPZprIieqIoxNRUM%3D" alt="Image guidelines" style="width: 100%; object-fit: cover; height:200px; margin-bottom: 10px" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #777; padding: 8px;">
+        <strong>✅ Feature or function display</strong>
+      </td>
+      <td style="border: 1px solid #777;">
+        <div style="display: flex; align-items: center;">
+        <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/c176030ef8b349119f9daeef0262679a~tplv-nk3i2mqmvs-image.png?x-expires=2016677232&x-signature=bcL2E34tDLpiZQYGQpEZQ0HgG8I%3D" alt="Image guidelines" style="width: 100%; object-fit: cover; height:200px; margin-bottom: 10px" />
+        <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/a2c0719446bf4475992fdb01515b69e7~tplv-nk3i2mqmvs-image.png?x-expires=2016677233&x-signature=L2EYH11Nprp3u5NAErKTA0t%2FIxQ%3D" alt="Image guidelines" style="width: 100%; object-fit: cover; height:200px; margin-bottom: 10px" />
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+        `,
+      },
+    ],
+  },
+  {
+    slug: "product-attribute-guidelines",
+    title: "Product Attribute Guidelines",
+    image: "/getting-started/16.png",
+    description:
+      "Learn how to create effective product attributes that improve search visibility and attract customers.",
+    category: "Product Management",
+    readTime: "3 min read",
+    difficulty: "Beginner",
+    tags: [
+      "product attributes",
+      "SEO",
+      "best practices",
+      "ecommerce",
+      "copywriting",
+      "content writing",
+      "product information",
+    ],
+    sections: [
+      {
+        id: "filling-in-product-attributes",
+        title: "Filling in Product Attributes",
+        content: `
+        <h3>Where Product Attributes are Displayed</h3>
+        <p>A few common areas variations will appear are:</p>
+          <img src="/assets/product-attributes-display.png" alt="Product attributes" style="max-width:100%; height:auto; margin-bottom: 10px" />
+          <img src="/assets/product-attributes-display-2.png" alt="Product attributes" style="max-width:100%; height:auto;" />
+        `,
+      },
+      {
+        id: "register-mandatory-product-attributes",
+        title: "Register Mandatory Product Attributes For Your Product",
+        content: `
+          <p>
+            In the Product Attributes section, you will see the suggested attributes detail for your products based on the product name and category you have input on the previous step. You can choose whether to use the suggested attributes or add a custom attribute value that you think is more suitable for your product by entering the attribute manually and clicking the Add button.
+          </p>
+        `,
+      },
+      {
+        id: "creating-product-variations",
+        title: "Creating product variations",
+        content: `
+          <p>
+            ✅ For certain categories. We would suggest adding a different image for each color variation to enhance visual appeal and help customers make informed choices.
+          </p>
+          <p>
+            ✅ Use contrast background image that can help make your product variant color stand out!
+          </p>
+          <img src="https://p16-oec-university-sign-sg.ibyteimg.com/tos-alisg-i-nk3i2mqmvs-sg/4adba5bd71d447d3980bd773a877b3c5~tplv-nk3i2mqmvs-image.png?x-expires=2016687974&x-signature=IYfpEbppk%2BsWPRGYnDfJRGYLknw%3D" alt="Product variant color" style="max-width:100%; height:auto;" />
+          <h3>We have provided tools that will help you generate product attributes for your product in a quick and simple way.</h3>
+          <p>You can choose whatever variants you want to create. You can also add a variant manually if there is no suitable option available.</p>
+          <img src="/assets/product-variants.png" alt="Product variant color" style="max-width:100%; height:auto;" />
+        `,
+      },
+    ],
+  },
+  {
     slug: "product-management",
     title: "Managing Your Products",
+    image: "/getting-started/17.png",
     description:
       "Learn how to add, edit, and optimize your product listings for maximum visibility.",
     category: "Product Management",
@@ -550,6 +1033,9 @@ export const topics: Topic[] = [
             <li>Customer reviews and ratings</li>
             <li>Return rate</li>
           </ul>
+          <h4>Watch the Walkthrough:</h4>
+        <p>Here’s a quick preview of how to create a new product:</p>
+        <video src="/gifs/07.mp4" alt="Create new product" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" playsinline controls></video>
         `,
       },
       {
@@ -579,61 +1065,6 @@ export const topics: Topic[] = [
             <li><strong>Reorder Points:</strong> Set automatic reorder triggers</li>
             <li><strong>Supplier Management:</strong> Maintain good relationships with suppliers</li>
             <li><strong>Demand Forecasting:</strong> Use historical data to predict future needs</li>
-          </ul>
-        `,
-      },
-    ],
-  },
-  {
-    slug: "product-photography",
-    title: "Product Photography Guide",
-    description:
-      "Master the art of product photography to showcase your items effectively.",
-    category: "Product Management",
-    readTime: "20 min read",
-    difficulty: "Intermediate",
-    tags: ["photography", "images", "visual marketing"],
-    sections: [
-      {
-        id: "photography-basics",
-        title: "Photography Basics",
-        content: `
-          <p>Great product photos can significantly increase your sales conversion rate.</p>
-          <h4>Essential Equipment:</h4>
-          <ul>
-            <li><strong>Camera:</strong> DSLR, mirrorless, or high-quality smartphone</li>
-            <li><strong>Lighting:</strong> Natural light or softbox lighting setup</li>
-            <li><strong>Background:</strong> White seamless paper or lightbox</li>
-            <li><strong>Tripod:</strong> For stable, consistent shots</li>
-            <li><strong>Props:</strong> Lifestyle elements to show product in use</li>
-          </ul>
-          <h4>Lighting Techniques:</h4>
-          <ul>
-            <li>Use natural light from a large window when possible</li>
-            <li>Avoid direct sunlight which creates harsh shadows</li>
-            <li>Use reflectors to fill in shadows</li>
-            <li>Consider a lightbox for small products</li>
-          </ul>
-        `,
-      },
-      {
-        id: "photo-composition",
-        title: "Photo Composition and Styling",
-        content: `
-          <p>Composition and styling make your products more appealing to customers.</p>
-          <h4>Composition Rules:</h4>
-          <ul>
-            <li><strong>Rule of Thirds:</strong> Place key elements along grid lines</li>
-            <li><strong>Fill the Frame:</strong> Make your product the main focus</li>
-            <li><strong>Multiple Angles:</strong> Show front, back, sides, and details</li>
-            <li><strong>Scale Reference:</strong> Include size references when helpful</li>
-          </ul>
-          <h4>Styling Tips:</h4>
-          <ul>
-            <li>Keep backgrounds clean and uncluttered</li>
-            <li>Use props that complement, not compete with your product</li>
-            <li>Show products in use or lifestyle contexts</li>
-            <li>Maintain consistent styling across your brand</li>
           </ul>
         `,
       },
