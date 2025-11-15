@@ -4,7 +4,7 @@ import { topics } from "@/lib/topics";
 import { Link } from "@/i18n/navigation";
 
 interface SearchPageProps {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
   searchParams?: { q?: string };
 }
 
@@ -15,9 +15,7 @@ export default function SearchPage({ searchParams }: SearchPageProps) {
   const results = query
     ? topics.filter((topic) => {
         const inTitle = topic.title.toLowerCase().includes(normalized);
-        const inDescription = topic.description
-          .toLowerCase()
-          .includes(normalized);
+        const inDescription = topic.description.toLowerCase().includes(normalized);
         const inCategory = topic.category.toLowerCase().includes(normalized);
         const inTags = topic.tags?.some((tag) =>
           tag.toLowerCase().includes(normalized)
