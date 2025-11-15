@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/config";
+import { ThemeFaviconWatcher } from "@/components/ThemeFaviconWatcher";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +29,10 @@ export async function generateMetadata ({
   return {
     title: t("title"),
     icons: {
-      icon: '/logo-light.png',
+      icon: [
+        { url: '/logo-light.png', media: '(prefers-color-scheme: light)' },
+        { url: '/logo-dark.png', media: '(prefers-color-scheme: dark)' },
+      ],
     },
   }
 }
@@ -48,7 +52,10 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`${inter.className} antialiased`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <ThemeFaviconWatcher />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -25,15 +25,15 @@ const iconMap = {
 
 const Hero = ({ subTitle, title, description, resources }: Props) => {
   return (
-    <section className="bg-zinc-950 text-white h-[55vh]">
+    <section className="bg-zinc-950 text-white py-10 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex items-center justify-center gap-40"
+          className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16"
         >
-          <div>
+          <div className="w-full lg:w-[50%]">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -70,7 +70,7 @@ const Hero = ({ subTitle, title, description, resources }: Props) => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative w-full lg:w-[50%] aspect-square max-w-[600px]"
+            className="relative w-full lg:w-[45%] aspect-square max-w-[480px] mt-8 lg:mt-0"
           >
             <Image
               src="/hero.png"

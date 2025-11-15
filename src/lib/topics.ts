@@ -2052,6 +2052,219 @@ const autoConfirmOrders = async () => {
       },
     ],
   },
+
+  // Delivery Rider
+  {
+    slug: "how-to-register-and-verify-your-rider-account",
+    title: "How to register and verify your rider account",
+    description:
+      "A step-by-step guide on creating your rider account, verifying your identity, and completing the onboarding process.",
+    category: "Rider Onboarding",
+    readTime: "10 min read",
+    difficulty: "Beginner",
+    tags: ["rider", "onboarding", "verification", "registration"],
+    sections: [
+      {
+        id: "create-account",
+        title: "1. Creating Your Rider Account",
+        content: `
+        <p>To start delivering, you first need to create a verified rider account. Follow these simple steps to get started.</p>
+
+        <h4>Step 1: Register with Your Email</h4>
+        <p>Create your account by providing the following:</p>
+        <ul>
+          <li><strong>Email Address</strong> – Must be valid and accessible</li>
+          <li><strong>Password</strong> – Minimum 8 characters</li>
+        </ul>
+        <p>Once submitted, the system will automatically send a 6-digit One-Time Password (OTP) to your email.</p>
+
+        <h4>Step 2: Verify Using OTP</h4>
+        <p>Check your inbox (or spam/junk folder) for the verification code. Enter the 6-digit OTP on the verification page to activate your account.</p>
+        <p>After successful verification, you will be redirected to the onboarding process.</p>
+      `,
+      },
+      {
+        id: "onboarding-process",
+        title: "2. Rider Onboarding Process",
+        content: `
+        <p>The onboarding process ensures that all riders are verified, trained, and ready for safe deliveries. It consists of five steps.</p>
+
+        <h4>Step 1: Personal Information</h4>
+        <p>Provide your basic details:</p>
+        <ul>
+          <li>Full Name</li>
+          <li>Vehicle Type (<em>Motorcycle, Tricycle, or Bicycle</em>)</li>
+        </ul>
+
+        <h4>Step 2: Identity Details</h4>
+        <p>Depending on your chosen vehicle type, complete the fields below:</p>
+        <ul>
+          <li>Gender</li>
+          <li>Date of Birth</li>
+          <li>License Number <strong>(Optional if Bicycle is selected)</strong></li>
+        </ul>
+
+        <h4>Step 3: Vehicle Information</h4>
+        <p>If your selected vehicle is <strong>motorcycle or tricycle</strong>, you must provide:</p>
+        <ul>
+          <li>Vehicle Plate Number</li>
+        </ul>
+        <p>Bicycle riders may skip this step.</p>
+
+        <h4>Step 4: Virtual Training</h4>
+        <p>Read through the short virtual training module to learn:</p>
+        <ul>
+          <li>Basic delivery handling</li>
+          <li>Customer communication tips</li>
+          <li>Platform rules and rider responsibilities</li>
+          <li>Safety reminders</li>
+        </ul>
+        <p>This ensures all riders understand the platform’s standards before starting.</p>
+
+        <h4>Step 5: Upload Required Attachments</h4>
+        <p>To complete your verification, upload the following documents:</p>
+        <ul>
+          <li><strong>Driver’s License</strong> (Not needed for bicycle riders)</li>
+          <li><strong>Official Receipt (OR)</strong></li>
+          <li><strong>Certificate of Registration (CR)</strong></li>
+          <li><strong>Clear Profile Picture</strong> (Front view)</li>
+          <li><strong>Vehicle Photo</strong> showing the plate number</li>
+        </ul>
+
+        <p>Please make sure that all uploaded documents are clear, readable, and not edited or tampered with. Once submitted, your application will be reviewed by our verification team.</p>
+      `,
+      },
+      {
+        id: "final-steps",
+        title: "3. Final Review and Approval",
+        content: `
+        <p>After completing all onboarding steps, your account will enter the review stage.</p>
+
+        <ul>
+          <li>Verification typically takes between <strong>24–48 hours</strong>.</li>
+          <li>You will receive an email notification once your account is approved.</li>
+          <li>Once approved, you can start accepting and completing delivery orders.</li>
+        </ul>
+
+        <p>Welcome aboard! You're now ready to begin your journey as a verified delivery rider on our platform.</p>
+
+        <h4>Watch the Walkthrough:</h4>
+        <p>Here’s a quick preview of how to complete the delivery rider registration form:</p>
+        <img src="/gifs/rider.gif" alt="Delivery rider Registration Walkthrough" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+      `,
+      },
+    ],
+  },
+  {
+    slug: "requirements-needed-for-onboarding",
+    title: "Requirements Needed for Rider Onboarding",
+    description:
+      "Review the complete list of documents and attachments required to verify your identity and vehicle before becoming an official delivery rider.",
+    category: "Rider Onboarding",
+    readTime: "8 min read",
+    difficulty: "Beginner",
+    tags: ["documents", "verification", "requirements"],
+    sections: [
+      {
+        id: "why-needed",
+        title: "Why These Requirements Are Needed",
+        content: `
+        <p>To ensure the safety and legitimacy of all riders on the platform, we require certain documents for identity verification and vehicle validation. These documents also help confirm that you are authorized to use your vehicle for delivery operations.</p>
+        <p>Please make sure all photos are <strong>clear, readable, and not edited or altered</strong>.</p>
+      `,
+      },
+      {
+        id: "drivers-license",
+        title: "1. Valid Driver’s License",
+        content: `
+        <p>This is required for riders using a <strong>motorcycle</strong> or <strong>tricycle</strong>. Bicycle riders may skip this requirement.</p>
+        <p>Your uploaded license must clearly show:</p>
+        <ul>
+          <li>Full name of the license holder</li>
+          <li>License number</li>
+          <li>Expiration date</li>
+          <li>Photo of the owner</li>
+        </ul>
+        <p>Make sure the entire front of the license is visible and not cropped. Avoid glare or blurred text.</p>
+        <img src="/assets/rider-license-guidelines.png" alt="Rider License Guideline" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+      `,
+      },
+      {
+        id: "certificate-of-registration",
+        title: "2. Certificate of Registration (CR)",
+        content: `
+        <p>The Certificate of Registration confirms ownership and details of your vehicle. Even if you are not the registered owner, this document must be submitted.</p>
+        <p>The following must be clearly visible in your CR:</p>
+        <ul>
+          <li>Vehicle Plate Number</li>
+          <li>Registered Owner’s Name</li>
+          <li>Vehicle Details (model, type, chassis number, etc.)</li>
+          <li>OR Number (found in the section for first registration details)</li>
+        </ul>
+        <p>Ensure that the document is photographed fully and legibly as shown in the sample image.</p>
+        <img src="/assets/rider-cr-guidelines.png" alt="Rider CR Guideline" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+      `,
+      },
+      {
+        id: "official-receipt",
+        title: "3. Official Receipt (OR)",
+        content: `
+        <p>The Official Receipt verifies that the vehicle's registration is valid and paid. This must match the details from the Certificate of Registration.</p>
+        <p>The OR must clearly show:</p>
+        <ul>
+          <li>Plate Number</li>
+          <li>Owner’s Name</li>
+          <li>OR Number</li>
+          <li>Date of Release</li>
+        </ul>
+        <p>Please upload a clean and readable image with all edges visible.</p>
+        <img src="/assets/rider-or-guidelines.png" alt="Rider OR Guideline" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+      `,
+      },
+      {
+        id: "rider-photos",
+        title: "4. Rider Profile Photo",
+        content: `
+        <p>Your profile picture must meet the following guidelines:</p>
+        <ul>
+          <li>Clear front-facing photo</li>
+          <li>No sunglasses, caps, or heavy filters</li>
+          <li>Good lighting with a plain background if possible</li>
+        </ul>
+        <p>This photo will also be visible to customers for identification.</p>
+        <img src="/assets/rider-photo-guidelines.png" alt="Rider Photo Guideline" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+      `,
+      },
+      {
+        id: "vehicle-photo",
+        title: "5. Vehicle Photo with Plate Number",
+        content: `
+        <p>Upload a photo of your motorcycle or tricycle showing the entire vehicle and the plate number clearly.</p>
+        <p>Guidelines:</p>
+        <ul>
+          <li>Plate number must be readable</li>
+          <li>Vehicle must not be obstructed</li>
+          <li>Front or rear angle is acceptable as long as the plate is visible</li>
+        </ul>
+        <p>Bicycle riders may skip this step since they do not require a license plate.</p>
+        <img src="/assets/rider-vehicle-guidelines.png" alt="Rider Vehicle Guideline" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+      `,
+      },
+      {
+        id: "reminders",
+        title: "Important Reminders",
+        content: `
+        <ul>
+          <li>Do not upload edited, filtered, or digitally modified documents.</li>
+          <li>Make sure all photos are taken in bright and natural lighting.</li>
+          <li>Documents must match the information you entered during onboarding.</li>
+          <li>Your application may be delayed if documents are incomplete or unclear.</li>
+        </ul>
+        <p>Once all requirements are submitted, your application will proceed to the verification stage.</p>
+      `,
+      },
+    ],
+  },
 ];
 
 export function getTopicData(slug: string): Topic | null {
