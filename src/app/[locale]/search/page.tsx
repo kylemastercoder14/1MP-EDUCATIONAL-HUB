@@ -4,18 +4,21 @@ import { topics } from "@/lib/topics";
 import { Link } from "@/i18n/navigation";
 
 interface SearchPageProps {
-  params: { locale: string };
-  searchParams?: { q?: string };
+  params: Promise<{ locale: string }>;
+  searchParams?: Promise<{ q?: string }>;
 }
 
-export default function SearchPage({ searchParams }: SearchPageProps) {
-  const query = (searchParams?.q ?? "").trim();
+export default async function SearchPage({ searchParams }: SearchPageProps) {
+  const resolvedSearchParams = await searchParams;
+  const query = (resolvedSearchParams?.q ?? "").trim();
   const normalized = query.toLowerCase();
 
   const results = query
     ? topics.filter((topic) => {
         const inTitle = topic.title.toLowerCase().includes(normalized);
-        const inDescription = topic.description.toLowerCase().includes(normalized);
+        const inDescription = topic.description
+          .toLowerCase()
+          .includes(normalized);
         const inCategory = topic.category.toLowerCase().includes(normalized);
         const inTags = topic.tags?.some((tag) =>
           tag.toLowerCase().includes(normalized)
@@ -37,7 +40,6 @@ export default function SearchPage({ searchParams }: SearchPageProps) {
             "Search"
           )}
         </h1>
-
         {query ? (
           <p className="text-sm text-gray-600 mb-6">
             {results.length} result{results.length === 1 ? "" : "s"} found.
@@ -48,14 +50,12 @@ export default function SearchPage({ searchParams }: SearchPageProps) {
             Educational Hub.
           </p>
         )}
-
         {query && results.length === 0 && (
           <p className="text-sm text-gray-500">
             No topics matched your search. Try using different keywords like
             "payment", "onboarding", or "marketing".
           </p>
         )}
-
         {results.length > 0 && (
           <ul className="space-y-4 mt-2">
             {results.map((topic) => (
