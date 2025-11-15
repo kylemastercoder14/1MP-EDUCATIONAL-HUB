@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import Header from "@/components/globals/header";
 import { topics } from "@/lib/topics";
 import { Link } from "@/i18n/navigation";
 
 interface SearchPageProps {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
   searchParams?: { q?: string };
 }
 
